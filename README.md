@@ -27,9 +27,9 @@ The following types exist (with some corresponding operations):
 - json (like string, but only allows valid json to be stored)
   - json patch, extract etc
   - json helpers like:
-    - set
-    - sorted sets
-    - lists
+    - set `{"one": true, "two": true}` or `{"set": ["one", "two"]}`
+    - sorted sets `{"one": 1.0, "two": 2.0, "something-else": 1.5}`
+    - lists `["one", "two", "three"]`
 - streams (mainly used for event streaming)
   streams are optionally size limited arrays indexed by timestamp based IDs
   clients can insert at the end of a stream and fetch all entries since a given timestamp
